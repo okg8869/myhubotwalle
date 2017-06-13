@@ -114,12 +114,22 @@ module.exports = function(bot) {
             msg.reply(pyramid);
     });
 
-    bot.respond(/killtest/, function(msg) {
-        var name = 'tcooper';
-        var pers = msg.envelope.user.name;
-        return bot.messageRoom("oli-g", "test");
-
+// The bot sends a message to the room when dm'd this message
+    bot.hear(/message room/, function(msg){
+        var room = '#general';
+        bot.messageRoom(room, 'Just to message the room');
     });
+
+// the bot sends a dm to whoever is in the name variable, and confirms the kill in general
+    bot.respond(/The time has come to kill Robocop!/, function(msg) {
+        var name = '@oli-g';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Robocop stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Robocop is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://filmjunk.com/images/weblog/2010/07/robocoprebootdead.jpg");
+    });
+
+
 
     // (labianca) Alexander Labianca - rosie
     // (erica) Erica Gilbert - bender
