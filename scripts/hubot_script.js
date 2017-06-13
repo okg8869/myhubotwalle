@@ -120,25 +120,61 @@ module.exports = function(bot) {
         bot.messageRoom(room, 'Just to message the room');
     });
 
-// the bot sends a dm to whoever is in the name variable, and confirms the kill in general
+// the bot sends a dm to whoever is in the name variable, and confirms the kill in general chat
     bot.respond(/The time has come to kill Robocop!/, function(msg) {
-        var name = '@oli-g';
+        var name = '@albrechs';
         var room = '#general';
         bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
         bot.messageRoom(name, "Battle ensues!.... Robocop stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Robocop is now being displayed in the general chat.');
         bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://filmjunk.com/images/weblog/2010/07/robocoprebootdead.jpg");
     });
 
+    bot.respond(/The time has come to kill Robocop!/, function(msg) {
+        var name = '@labianca';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Rosie stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Rosie is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://www.syfy.com/sites/syfy/files/styles/large/public/DarkMatter_blog_lady_robots_rosie.jpg?itok=WKa2TijX");
+    });
 
+    bot.respond(/The time has come to kill Bender!/, function(msg) {
+        var name = '@erica';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Bender stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Bender is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://www.3dhifi.com/pics/bender_futurama.jpg");
+    });
 
-    // (labianca) Alexander Labianca - rosie
-    // (erica) Erica Gilbert - bender
-    // (jgennell) John W - johnny5
-    // (myounkie) Michael Youkie - r2d2
-    // (scobban) Scott Cobban - kitt
-    // (albrechs) Trevor Albrecht - robocop
-    // (tcooper) Tristan Cooper - hal
+    bot.respond(/The time has come to kill Johnny5!/, function(msg) {
+        var name = '@jgennell';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Johnny5 stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Johnny5 is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://static1.1.sqspcdn.com/static/f/411701/11841451/1303405897207/Johnnybeatdown.jpg?token=rJ%2FkItc3H5STsJBXmXBsEkseRXQ%3D");
+    });
 
-    // Write so that when I say "destory this bot" - it dms that person with an image of that bots name dieing
+    bot.respond(/The time has come to kill R2D2!/, function(msg) {
+        var name = '@myounkie';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... R2D2 stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of R2D2 is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "http://keithmac.com/wp-content/uploads/2010/07/r2d2lights.jpg");
+    });
+
+    bot.respond(/The time has come to kill Kitt!/, function(msg) {
+        var name = '@scobban';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Kitt stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Kitt is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "https://c1.staticflickr.com/4/3569/3280708482_903a0caed2.jpg");
+    });
+
+    bot.respond(/The time has come to kill Hal!/, function(msg) {
+        var name = '@tcooper';
+        var room = '#general';
+        bot.messageRoom(name, "A wild Walle appears!" + '\n' + "http://img07.deviantart.net/1cc2/i/2015/124/e/7/wall_e__quot_kill_eve_quot__by_mrkillzo-d1v9t26.jpg");
+        bot.messageRoom(name, "Battle ensues!.... Hal stands no chance!" + '\n' + " and the victor.... " + '\n' + '\n' + '\n' + "WALLLEEEEEEEEE!" + '\n' + 'A trophy of Hal is now being displayed in the general chat.');
+        bot.messageRoom(room, "It is done my lord. I have brought you a trophy for your collection." + '\n' + "https://tigerpapers.files.wordpress.com/2011/11/hal.jpg");
+    });
 
 }
